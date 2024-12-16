@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="./img/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+        <link rel="shortcut icon" href="./img/favicon.ico" />
+        <link rel="stylesheet" href="./css/dialogue.css" />
+        <script type="module" src="./js/index.js" defer></script>
+        <title>Sonic RPG</title>
+    </head>
+    <body>
+        <video
+            class="video_opening"
+            src="./video/video_opening.mp4"
+            preload="auto"
+        ></video>
+        <audio
+            id="background_music"
+            preload="auto"
+            autoplay
+            loop
+        ></audio>
+        <article class="dialogue-container">
+            <section class="chara-container">
+                <h2 class="chara">SONIC</h2>
+            </section>
+            <section class="dialogue">
+                <p class="texte">Quelle belle journée !</p>
+                <audio
+                    id="son_dialogue"
+                    src="./sounds/sound_dialogue.mp3"
+                    preload="auto"
+                ></audio>
+            </section>
+        </article>
+        <div class="choix-container">
+            <article>
+                <section class="choix">
+                    <h2 class="choix-nom">Choix 1</h2>
+                </section>
+                <section>
+                    <p class="choix-texte">Knuckles suit Sonic</p>
+                </section>
+            </article>
+            <article>
+                <section class="choix">
+                    <h2 class="choix-nom">Choix 2</h2>
+                </section>
+                <section>
+                    <p class="choix-texte">Knuckles suit Tails</p>
+                </section>
+            </article>
+        </div>
+        <img src="./img/reset_button.png" alt="Boutton reset" id="reset_button">
+    </body>
+</html>

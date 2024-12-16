@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'NiseSegaSonic';
+    src: url('../font/NiseSegaSonic.woff2') format('woff2'),
+        url('../font/NiseSegaSonic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url("../img/Bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 72px;
+}
+
+body:hover {
+    cursor: pointer;
+}
+
+h2{
+    font-family: "NiseSegaSonic";
+    color: white;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+    font-size: 32px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: touchtostart 5s infinite ease-in-out;
+}
+
+@keyframes touchtostart{
+    0%,
+    50%,
+    to{
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0.4;
+    }
+}
+
+.menu img{
+    width: 650px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 115px;
+}

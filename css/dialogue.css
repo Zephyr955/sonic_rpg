@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    padding: 64px;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 60%;
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+
+h2{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+article{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+section:nth-of-type(1){
+    width: fit-content;
+    padding: 12px 36px;
+    background: linear-gradient(#4DBBFF, #2E9FE5);
+    border-radius: 16px;
+}
+
+section:nth-of-type(2){
+    width: 100%;
+    padding: 36px;
+    background: linear-gradient(#C4E9FF, #8DD4FF);
+    border-radius: 16px;
+    height: 160px;
+}
+
+.dialogue-container {
+    cursor: pointer;
+}
+
+.choix-container {
+    display: none;
+    width: 100%;
+    gap: 84px;
+}
+
+.choix-container section:nth-of-type(1){
+    width: fit-content;
+    padding: 12px 36px;
+    background: linear-gradient(#4DBBFF, #2E9FE5);
+    border-radius: 16px;
+    display: flex;  
+    text-align: center;
+}
+
+.choix-container section:nth-of-type(2){
+    width: 100%;
+    padding: 36px;
+    background: linear-gradient(#C4E9FF, #8DD4FF);
+    border-radius: 16px;
+    height: 160px;
+    text-align: center;
+
+}
+
+.choix-container article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+.choix-container p{
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    align-items: center;
+}
+
+.choix-container h2{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+.choix:hover {
+    cursor: pointer;
+}
+
+#reset_button{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 5%;
+}
+

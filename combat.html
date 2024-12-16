@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="./img/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+        <link rel="shortcut icon" href="./img/favicon.ico" />
+        <link rel="stylesheet" href="./css/combat.css" />
+        <script type="module" src="./js/combat.js" defer></script>
+        <title>Sonic RPG</title>
+    </head>
+    <body>
+        <audio src="./sounds/ost_combat_1.mp3" preload="auto" autoplay loop></audio>
+        <img alt="Sprite Sonic" id="img-player" />
+        <img alt="Sprite Seelkadoom" id="img-ennemy" />
+        <article class="commandes">
+            <audio id="magie_click" src="./sounds/magie_click.mp3" preload="auto"></audio>
+            <div id="attaque">
+                <img src="./img/sword-fill_svgrepo.com.png" alt="" />
+                <h3>ATTAQUE</h3>
+            </div>
+            <div id="magie">
+                <img src="./img/magic-trick-1_svgrepo.com.png" alt="" />
+                <h3>MAGIE</h3>
+            </div>
+            <div id="defense">
+                <img src="./img/shield_svgrepo.com.png" alt="" />
+                <h3>DÉFENSE</h3>
+            </div>
+        </article>
+        <article>
+            <section>
+                <header>
+                    <h2 id="name-player">SONIC</h2>
+                </header>
+                <div>
+                    <div>
+                        <div id="pv-player"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h2 id="name-ennemy">SEELKADOOM</h2>
+                </header>
+                <div id="barre-ennemy">
+                    <div>
+                        <div id="pv-ennemy"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <section id="attaque-special">
+        </section>
+        <div id="combat-actions">
+
+        </div>
+    </body>
+</html>

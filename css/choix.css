@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    padding: 132px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Sonic_plage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 60%;
+    gap: 84px;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    align-items: center;
+}
+
+h2{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+section:nth-of-type(1){
+    width: fit-content;
+    padding: 12px 36px;
+    background: linear-gradient(#4DBBFF, #2E9FE5);
+    border-radius: 16px;
+    display: flex;
+    text-align: center;
+}
+
+section:nth-of-type(2){
+    width: 100%;
+    padding: 36px;
+    background: linear-gradient(#C4E9FF, #8DD4FF);
+    border-radius: 16px;
+    height: 160px;
+    text-align: center;
+
+}
+
+h2{
+    cursor: pointer;
+}
